@@ -12,7 +12,7 @@ Vamos também realizar um scan <mark>Gobuster</mark>
 > ```bash
 > gobuster dir --url [ip_address] -w ../Discovery/Web-Content/common.txt
 > ```
-![](scan_gobuter.jpg)
+![](scan_gobuster.jpg)
 
 Vamos investigar os diretórios descobertos
 Primeiro, começando com <mark>/index.php</mark>
