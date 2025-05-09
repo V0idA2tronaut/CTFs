@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3ee6ba5b-771b-4512-bf59-bb01bbff53d5)# _**Psycho Break CTF**_
+# _**Psycho Break CTF**_
 ![](break.jpg)
 
 ## _**Enumeração**_
