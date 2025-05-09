@@ -1,12 +1,12 @@
 # _**Break Out The Cage CTF**_
-![](cage.jpg)
+![](break.jpg)
 
 ## _**Enumeração**_
 Primeiro, vamos começar com um scan <mark>Nmap</mark>
 > ```bash
 > nmap -p 0-9999 -A -T5 [ip_address]
 > ```
-![](scan_nmap.jpg)
+![](nmap_scan.jpg)
 
 Vamos também realizar um scan com <mark>Gobuster</mark>
 > ```bash
