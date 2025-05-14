@@ -31,7 +31,7 @@ Para confirmarmos, vamos utilizar o Nmap
 Temos retorno!  
 Vamos tentar explorar  
 
-## _**Ganhando acesso*_
+## _**Ganhando acesso**_
 Buscando no Google um pouco mais para tentar descobrir onde podemos encontrar um _exploit_, chegamos [neste link](https://github.com/00theway/Ghostcat-CNVD-2020-10487)  
 Primeiro
 > ```bash
