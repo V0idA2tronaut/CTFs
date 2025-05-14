@@ -51,7 +51,7 @@ Temos uma resposta para o comando acima!
 
 Vamos realizar login via SSH com o usuário e senha encontrados  
 
-![](login_ssh.jpg)
+![](ssh_login.jpg)
 
 Após login, investigamos os diretórios e descobrimos que tem outro usuário, _merlin_
 Nele, contém nossa primeira flag!
