@@ -12,7 +12,7 @@ Parece que temos login anônimo via FTP
 Vamos verificar os arquivos que estão ali  
 Extraindo  
 
-![](fpt_extract.jpg)
+![](ftp_extract.jpg)
 
 Visitando o website, temos a seguinte página  
 
