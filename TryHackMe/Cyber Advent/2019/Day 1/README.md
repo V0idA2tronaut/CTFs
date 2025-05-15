@@ -81,7 +81,23 @@ Se um servidor cria cookies que usam valores previsíveis como nome de usuário 
 Embora você possa usar o Burp Suite para manipular cookies, você também pode usar os recursos de inspeção de elementos dos navegadores
 
 # _**Execução**_
+Criam-se três novos usuários:
+* Teste1
+* Teste2
+* Teste3
 
+Ao efetuar login com cada um deles, nota-se que eles possuem valores de cookies idênticos a: <mark>dGVzdGUxdjRlcjlsbDEhc3M%3D</mark>
+Estes valores de cookies estão codificados em _**base64**_
+Decodificando cada um deles através do comando abaixo
+> ```bash
+> echo dGVzdGUzdjRlcjlsbDEhc3M%3D | base64 -d
+> ```
 
-
-
+Obteos: <mark>teste1v4er9ll1!ss</mark>
+E então temos:
+* Parte de usuário: teste1
+* Parte fixa: v4er9ll1!ss
+  
+Criando um valor de cookie com a parte fixa, é possível utilizar-se dela para realizar uma troca de sessão entre usuários
+Para mcinventory, temos: <mark>bWNpbnZlbnRvcnl2NGVyOWxsMSFzcw==</mark>
+Substituindo na aba de cookies ao abrir as ferramentas de programador, é possível obter acesso administrativo pela conta de mcinventory ao recarregar a página
