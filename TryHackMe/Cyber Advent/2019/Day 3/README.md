@@ -20,7 +20,8 @@ Isso carregará a captura de rede, à primeira vista você verá as seguintes co
 * **Lenght** - O comprimento do quadro 
 * **Info** - Informações comuns
 
-Ao selecionar um pacote, você verá o seguinte:
+Ao selecionar um pacote, você verá o seguinte:  
+
 ![](wireshark.jpg)
 
 Cada seção suspensa aqui é uma camada no modelo OSI
@@ -29,7 +30,8 @@ Por exemplo, temos o quadro inteiro, depois Ethernet (Data Link Layer - Layer 2)
 Podemos aplicar filtros ao Wireshark para procurar pacotes específicos  
 Podemos filtrar por tamanho do pacote, protocolo, IP de origem ou destino e mais  
 Vamos tentar procurar pela porta telnet para ver se há algum pacote de protocolo telnet  
-No campo de filtro, digite ‘telnet’
+No campo de filtro, digite ‘telnet’  
+
 ![](wireshark2.jpg)
 
 Você deve ver 3 pacotes  
@@ -47,7 +49,7 @@ Podemos tentar a ferramenta <mark>Crack The Hash</mark> pegando uma lista de pal
 Se for o mesmo hash, temos a palavra que foi originalmente hashada, se for diferente, podemos passar para a próxima palavra para comparar  
 
 Digamos que temos os seguintes dados:
-testuser:$6$/5K3q7L0$XsNMzp37s0Q8/sAX0NXtQQjsy6a2f5tvKn2ZJSGWwE8uL9JLhXKpR7.pCbu/WoZa4LXIPYe7k18Z3Nohymk5T0:18233:0:99999:7:::
+testuser:$6$/5K3q7L0$XsNMzp37s0Q8/sAX0NXtQQjsy6a2f5tvKn2ZJSGWwE8uL9JLhXKpR7.pCbu/WoZa4LXIPYe7k18Z3Nohymk5T0:18233:0:99999:7:::  
 Temos:
 * testuser sendo o nome de usuário
 * do primeiro (:) até o segundo (:), todas as informações de hash
@@ -59,6 +61,7 @@ Podemos procurar por $6 e ver que o hash-mode para Hashcat é 1800 e o tipo est�
 
 O <mark>Hashcat</mark> é uma ferramenta de quebra de senhas muito popular  
 Agora precisamos de uma lista de palavras para fazer o hash e comparar com o original, para isso usaremos uma lista de senhas chamada _rockyou.txt_  
+
 Primeiro, vamos salvar as Informações de Hash em um arquivo  
 Agora vamos quebrar esse hash  
 Temos nosso modo de hash (1800), nossos dados de hash em um arquivo e uma lista de palavras
