@@ -23,8 +23,8 @@ O nome identificado é <mark>chris</mark>, e sua senha é fraca
 Vamos realizar um teste de força bruta em _ftp_ e _ssh_ com seu nome. Para isso, utilizamos a ferramenta <mark>hydra</mark>  
 > ```bash
 > hydra -l chris -P ../wordlists/rockyou.txt -t 4 ftp
-> ```
-![](hydra_return.jpg)
+> ```  
+![](hydra_return.jpg)  
 
 Vamos realizar login via _ftp!_
 Listando os arquivos com ```ls```, conseguimos encontrar um arquivo: <mark>To_agentJ.txt</mark>  
