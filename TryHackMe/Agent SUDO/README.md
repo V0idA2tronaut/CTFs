@@ -107,7 +107,7 @@ Utilizando o comando ```scp```, extraímos a imagem para nossa máquina local
 > ```bash
 > scp james@[ip_address]:/home/james/Alien_autospy.jpg
 > ```
-![](scp_extract.jpg)
+![](scp_extract.jpg)  
 
 A imagem é relacionada ao caso Roswell, mais conhecido como <mark>Roswell Alien Autopsy</mark>  
 
@@ -126,7 +126,7 @@ No entanto, isso parece estranho, pois o primeiro _**all**_ significa que nosso 
 Vamos pesquisar no google por (ALL, !root) vulnerabilities  
 Achamos o seguinte caso  
 
-![](exploit_db.jpg)
+![](exploit_db.jpg)  
 
 Ao utilizar o comando abaixo, o _**sudo**_ não verifica a existência do ID do usuário especificado e executa com um ID de usuário arbitrário com o privilégio _**sudo**_
 > ```bash
