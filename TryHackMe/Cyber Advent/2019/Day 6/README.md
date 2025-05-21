@@ -1,4 +1,4 @@
-# _**ontexto de Exfiltração**_
+# _**Contexto de Exfiltração**_
 <mark>Exfiltração de dados</mark> é a técnica de transferir dados não autorizados para fora da rede, é por isso que as empresas geralmente têm sistemas de Prevenção de Perda de Dados em vigor  
 Infelizmente, os _Sistemas de Prevenção de Perda de Dados_ não são perfeitos e podem permitir que dados classificados saiam da rede  
 É aqui que entra o Centro de Operações de Segurança  
