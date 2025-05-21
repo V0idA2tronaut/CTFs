@@ -89,7 +89,7 @@ Protocolos diferentes são executados em números de porta diferentes, e serviç
 
 ***
 
-# **Escaneamento TCP**  
+**Escaneamento TCP**  
 O cenário de ataque mais comum é quando um invasor recebe o(s) endereço(s) IP de uma(s) máquina(s)  
 Um invasor precisaria enumerar a máquina para entender quais serviços estão em execução e explorá-los  
 Ele faz isso <makr>escaneando as portas da máquina que está enumerando</mark>  
@@ -97,7 +97,7 @@ A ferramenta mais comum usada para realizar escaneamentos é o **nmap**
 
 ***
 
-# **Ping scan**  
+**Ping scan**  
 Ao receber um endereço IP, você precisa verificar se a máquina está realmente ativa  
 Para isso, você pode usar o que é conhecido como **ping scan**  
 Um ping scan usa ICMP mais especificamente, uma solicitação de _echo ICMP_ para verificar se uma máquina está ativa  
