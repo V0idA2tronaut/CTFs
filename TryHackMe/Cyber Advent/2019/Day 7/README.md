@@ -30,6 +30,8 @@ Levar pacotes de um destino para outro é importante, mas temos muitas outras co
 
 A <mark>camada de transporte</mark> é composta principalmente por dois protocolos e daremos uma breve olhada em ambos  
 
+***
+
 O **TCP** é um protocolo de transmissão confiável e _orientado à conexão_  
 Ele possui as seguintes características:
 * **Confiável** - ao transferir dados pela internet, os pacotes podem ser descartados devido à perda de conexão
@@ -66,11 +68,16 @@ Ele faz isso usando o que é chamado de <mark>triple-way handshake</mark>
 [3] O cliente recebe este pacote e envia um novo pacote com o sinalizador ACK definido e o número de confirmação definido como o número de sequência inicial enviado pelo servidor  
 Após o terceiro pacote, o cliente e o servidor começam a transferir dados  
 
+***
+
 O **UDP** é um protocolo _sem conexão_ e _sem estado_  
 Ao contrário do TCP, ele não se concentra na confiabilidade nem na criação de uma conexão  
 Isso é útil em cenários onde a perda de dados é tolerada, como em streaming de vídeo e áudio  
 
-Este é o formato de um pacote UDP:
+Este é o formato de um pacote UDP:  
+
+![](udp_packet.jpg)  
+
 + <mark>A primeira linha</mark> contém um endereço de origem para indicar a origem
 + <mark>A segunda linha</mark> contém um endereço de destino para indicar o destino 
 + <mark>A terceira linha:</mark>
