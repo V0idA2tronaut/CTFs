@@ -71,7 +71,6 @@ Ao tentar ler este arquivo, temos permissão negada, porém, com as dicas anteri
 > find password -exec cat /home/igor/flag1.txt \;
 > ```
 Achamos a primeira flag  
-
 Para a segunda flag, temos que ler o conteúdo do arquivo _/root/flag2.txt_, mas para isso, precisamos de acesso _root_  
 Vasculhando os arquivos com o comando abaixo, temos que _/usr/bin/system-control_ tem permissões de SUID e execução  
 > ```bash
