@@ -49,7 +49,7 @@ Como você usaria algo assim no mundo real:
 # _**Parte 2: Execução**_
 Vamos criar o script para realizar a tarefa
 
-> ```
+> ```bash
 > #!/usr/bin/python3
 > 
 > import requests
