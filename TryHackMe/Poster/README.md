@@ -51,12 +51,12 @@ A partir deste último módulo, vamos configurá-lo e executar para podermos obt
 
 ![](exploit_sql.jpg)
 
-## _**Ganhando acesso_**
+## _**Ganhando acesso**_
 Parece que conseguimos encontrar um documento com credenciais de login SSH
 
 ![](ssh_login.jpg)
 
-Vamos realizar
+Vamos conseguir realizar com sucesso!
 
 ## _**Escalando privilégios**_
 Para conseguirmos escalar privilégios, executamos alguns comandos como ```sudo -l``` e ```find```, mas sem muito sucesso  
