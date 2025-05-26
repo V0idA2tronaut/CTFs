@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3058fd06-1a87-4bd6-bb08-5be87644c8c0)# _**Poster CTF**_
+# _**Poster CTF**_
 ![](post.jpg)
 
 ## _**Enumeração**_
