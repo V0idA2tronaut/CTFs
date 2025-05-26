@@ -10,12 +10,7 @@ Primeiro, vamos começar com um scan <mark>Nmap</mark>
 
 Parece que temos um banco de dados, <mark>PostgresSQL DB</mark> na porta 5432  
 Vamos investigar a página web primeiro  
-Um scan com <mark>Gobuster</mark>
-> ```bash
-> gobuster dir --url [ip_address] -w ../seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
-> ```
-![](scan_gobuster.jpg)
-
+Nada muito relevante  
 Após, vamos utilizar o <mark>Metasploit</mark> para encontrar uma vulnerabilidade na aplicação  
 
 ![](metasploit.jpg)
