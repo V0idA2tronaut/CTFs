@@ -32,6 +32,7 @@ Parece ser usuário e senha
 Vamos tentar login via SSH
 
 ![](pokemon_login.jpg)
+
 Sucesso!  
 
 ## _**Escalando privilégios**_
