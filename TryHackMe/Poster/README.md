@@ -12,9 +12,6 @@ Parece que temos um banco de dados, <mark>PostgresSQL DB</mark> na porta 5432
 Vamos investigar a página web primeiro  
 Nada muito relevante  
 Após, vamos utilizar o <mark>Metasploit</mark> para encontrar uma vulnerabilidade na aplicação  
-
-![](metasploit.jpg)
-
 As etapas a seguir foram feitas para poder encontrar um módulo de tentativa de enumeração de usuário e senha  
 
 ![](msf_module.jpg)  
