@@ -19,7 +19,7 @@ Se houver exploits públicos para um serviço em execução, não é aconselháv
 
 *** 
 
-**Contexto de FTP**
+**Contexto de FTP**  
 **FTP é o protocolo de transferência de arquivos**  
 O protocolo geralmente roda na porta 21 sobre o protocolo TCP  
 FTP é um protocolo bastante antigo que é usado para transferir arquivos  
@@ -33,7 +33,7 @@ Para se conectar a um servidor FTP, você pode usar o comando de linha de comand
 
 ***
 
-**Contexto de NFS**
+**Contexto de NFS**  
 NFS é um compartilhamento de arquivos de rede que roda em TCP e UDP nas portas 111 e 2049  
 Assim como FTP, NFS é usado para transferir arquivos  
 Eles ainda são bem diferentes  
@@ -56,7 +56,7 @@ Após concluir isso, você precisa desmontar o sistema de arquivos usando o coma
 
 ***
 
-**Contexto de MySQL**
+**Contexto de MySQL**  
 MySQL é um serviço que executa um servidor SQL  
 Um servidor SQL é um tipo particular de servidor de banco de dados que usa linguagem de consulta estruturada (SQL) para adicionar e manipular dados  
 O MySQL usa TCP e é executado na porta 3306 por padrão  
