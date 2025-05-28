@@ -64,8 +64,8 @@ Tentano realizar login com o usuário elyana e essa nova senha, mas nada!
 Vamos buscar outras maneiras  
 Com a ferramenta <mark>wpscan</mark>, que realiza varreduras automáticas em sites WordPress para detectar diversas informações, incluindo vulnerabilidades!  
 > ```bash
-> wpscan — url [ip_address]/wordpress -e u
-> wpscan — url [ip_address]/wordpress -e ap
+> wpscan --url [ip_address]/wordpress -e u
+> wpscan --url [ip_address]/wordpress -e ap
 > ```
 ![](user_detected.jpg)  
 
