@@ -18,6 +18,8 @@ Vamos realizar um scan com <mark>Gobuster</mark>
 > ```
 ![](scan_gobuster.jpg)
 
+## _**Ganhando acesso**_
+
 Investigando as páginas descobertas, encontramos um arquivo _.bak_  
 Baixamos este arquivo e utilizamos ```strings``` para verificar seu conteúdo  
 
