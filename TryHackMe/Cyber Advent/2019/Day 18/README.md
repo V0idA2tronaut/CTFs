@@ -6,6 +6,7 @@ As páginas da web são compostas por 3 componentes comuns:
 
 A maior parte do código Javascript é encontrada dentro de: <script></script>  
 Estas tags em uma página web  
+
 O código JavaScript é adicionado diretamente entre essas tags ou é chamado em um arquivo usando o atributo src dentro da tag de script de abertura, por exemplo: <script src=’location-to-file’></script>  
 Em geral, o JavaScript dentro das tags de script é sempre executado quando a página é carregada  
 
@@ -26,7 +27,7 @@ Isso ocorre em cenários como páginas de erro e links onde o payload é passado
 O caso mais comum é quando um invasor envia uma URL contendo um payload malicioso para a vítima  
 A vítima clica nesse URL e o payload é executado (exploraremos exatamente o que podemos fazer com um payload Javascript)  
 
-**Stored XSS**
+**Stored XSS**  
 XSS armazenado ocorre quando JavaScript arbitrário é armazenado em um banco de dados e esse JavaScript é recuperado e exibido ao usuário  
 Isso tende a ser mais perigoso do que XSS refletido, pois o payload é automaticamente passado (e até executado) ao usuário  
 
