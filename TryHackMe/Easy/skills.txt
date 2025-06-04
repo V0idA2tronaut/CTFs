@@ -1,0 +1,24 @@
+
+Desafios CTFs
+Configuração de computadores
+Configuração de redes
+Configuração de VMs
+
+//========//
+Ferramentas
+
+-Extração de arquivos e informações
+--Strings
+--Exiftool
+--Binwalk
+--Steghide
+
+-Scanner de rede
+--Nmap
+
+-Busca de diretórios
+--Gobuster
+
+-Fuzzing
+--ffuf
+
