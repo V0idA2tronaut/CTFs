@@ -1,5 +1,5 @@
 # _**Smag Grotto CTF**_
-![](groto.jpg)
+![](grotto.jpg)
 
 ## _**Enumeração**_
 Primeiro, vamos começar com um scan <mark>Nmap</mark>
