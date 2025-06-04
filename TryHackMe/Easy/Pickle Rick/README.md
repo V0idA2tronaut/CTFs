@@ -126,15 +126,3 @@ Procurando em outros diretórios, como /home, encontramos o diretório rick
 Dentro, um arquivo, _second ingredient_  
 Basta um ```cat *``` para descobrir  
 > _**What is the second ingredient in Rick’s potion?**_ <mark>1 jerry tear</mark>
-
-
-
-
-
-
-
-
-
-
-
-
