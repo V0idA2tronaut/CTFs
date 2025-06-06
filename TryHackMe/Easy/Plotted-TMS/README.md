@@ -1,5 +1,5 @@
-![image](https://github.com/user-attachments/assets/d68258d0-98a6-407b-b5fd-b8b4df7fbeb7)# _**Plotted-TMS**_
-![](plotted.jpg)
+# _**Plotted-TMS**_
+![](plot.jpg)
 
 ## _**Enumeração**_
 Primeiro, vamos começar com um scan <mark>Nmap</mark>
@@ -81,7 +81,7 @@ Vamos fazer isso para abrir uma shell no usuário **plot_admin**
 > ```
 Aguarde um tempo com ```netcat``` ligado e temos shell como **plot_admin**  
 
-![](plot_addmin.jpg)
+![](plot_admin.jpg)
 
 Vamos escalar privilégios novamente  
 Ao procurar por binários interessantes, encontrei "_doas_"  
