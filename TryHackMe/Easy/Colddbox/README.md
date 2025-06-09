@@ -29,7 +29,7 @@ Para isso, vamos:
 > ```bash
 > wpscan --url http://[ip_address] -e u -P /usr/share/wordlists/rockyou.txt
 > ```
-![](brute_wpscan.jpg)
+![](bruet_wpscan.jpg)
 
 Sucesso!  
 Vamos realizar login com o usuário ```c0ldd``` e senha descobertos  
