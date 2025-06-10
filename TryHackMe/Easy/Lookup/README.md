@@ -120,7 +120,5 @@ Agora, em nossa máquina
 > chmod 600 id_rsa
 > ssh -i id_rsa root@[ip_address]
 > ```
-![](root_access.jpg)
-
 Assim, temos acesso _root_  
 Basta ir atrás das flags!
