@@ -19,5 +19,7 @@ Investigando o código da página, temos:
 ![](login_code.jpg)
 
 Parece que temos o código de login da página  
-Com usuário e a senha  
+Algo que deveria estar no _backend_ da página
+Esse código nos permite manipular login  
+E temos usuário e a senha  
 Inserindo as credenciais, temos a flag!
