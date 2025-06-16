@@ -15,7 +15,7 @@ Vamos realizar um scan com <mark>Gobuster</mark>
 > ```
 ![](scan_gobuster.jpg)
 
-Temos diversos diretórios que pdemos tentar acessar, mas ao tentar, a maioria retorna como _forbidden_
+Temos diversos diretórios que pdemos tentar acessar, mas ao tentar, a maioria retorna como _forbidden_  
 Sabemos que o website é _powered by phpBB_  
 Alterando o endereço, conseguimos encontrar sua versão com: http://[ip_address]:8080/docs/changelog.html  
 Mesmo com _docs_ dando _forbidden_, ainda conseguimos acessar _changelog.html_ e sua versão: 3.3.x  
