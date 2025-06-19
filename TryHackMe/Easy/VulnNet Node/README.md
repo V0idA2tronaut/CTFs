@@ -1,5 +1,5 @@
 # _**VulNet: Node CTF**_
-![](net.jpg)
+![](node.jpg)
 
 ## _**Enumeração**_
 Primeiro, vamos começar com um scan <mark>Nmap</mark>
