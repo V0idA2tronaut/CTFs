@@ -43,7 +43,6 @@ Por fim, executamos esses comandos:
 ![](shell.obt.jpg)
 
 Conseguimos!
-
 ## _**Escalando privilégios**_
 Para escalarmos privilégios, vamos utilizar a ferramenta <mark>WinPeas</mark>  
 > ```bash
