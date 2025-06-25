@@ -16,7 +16,8 @@ _A porta 1883 aberta significa que o broker está pronto para aceitar conexões 
 
 Vamos executar o comando abaixo
 > ```bash
->
+> sudo apt install mosquitto-clients
+> mosquitto_sub -h [ip_address] -p 1883 -t "#" -v
 > ```
 ![](mosquitto_return.jpg)
 
