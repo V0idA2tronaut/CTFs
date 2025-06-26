@@ -33,8 +33,6 @@ Tentando acessar os outros diretórios numéricos, temos as imagens, mas o diret
 
 Acessando o diretório listado, temos uma página de login!
 
-![](login.jpg)
-
 ## _**Ganhando acesso**_
 Primeiro, uma tentativa de SQL Injection foi feita, mas sem nenhum sucesso  
 Segundo, foi tentado observar o que acontecia quando realizavamos uma requisição para o site no login com <mark>BurpSuite</mark>, mas nada  
