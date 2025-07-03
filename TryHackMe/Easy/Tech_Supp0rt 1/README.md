@@ -33,9 +33,6 @@ Vamos tentar via <mark>smbclient</mark> com o comando ```smbclient //10.10.141.4
 
 Temos um diretório interessante! ```websvr```  
 Vamos acessar com o comando ```smbclient //[ip_address]/websvr -N```  
-
-![](smb_access.jpg)
-
 Sucesso!  
 Vamos investigar este diretório  
 Temos um arquivo, vamos transferi-lo para nossa máquina e ler  
