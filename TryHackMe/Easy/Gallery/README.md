@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c758ca99-080b-49dc-a34a-9676fabf3320)# _**Gallery CTF**_
+# _**Gallery CTF**_
 ![](gal.jpg)
 
 ## _**Enumeração**_
