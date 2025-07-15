@@ -30,4 +30,5 @@ Após diversos erros e falhas, sem obter shell, encontramos uma pista no serviç
 
 Embora já saibamos disso, bom relatar  
 Continuando  
-Nenhum arquivo parece funcionar
+Nenhum arquivo parece funcionar no upload, mesmo após verificar soluções na Internet  
+Por enquanto, sem resolução para esta sala
