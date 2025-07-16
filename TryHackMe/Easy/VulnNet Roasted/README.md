@@ -16,8 +16,16 @@ Temos também um serviço SMB do qual podemos tentar enumerar com ```smbclient -
 
 ![](smb_client.jpg)
 
-Também podemos tentar buscar _usernames_ com [lookupsid](https://github.com/fortra/impacket/blob/master/examples/lookupsid.py)
+Isso é interessante, quando a máquina tem SMB aberto e IPC$ aberto com acesso mínimo de leitura, ela fica vulnerável a outras enumerações de usuários
+Primeiro, vamos executar o  coamndo abaixo para verificar permissões  
+> ```bash
+> smbmap -u anonymous -H [ip_address]
+> ```
+![](smbmap_return.jpg)
+
+Vamos também buscar por _usernames_ com [lookupsid](https://github.com/fortra/impacket/blob/master/examples/lookupsid.py)
 > ```bash
 > lookupsid.py anonymous@[ip_address]
 > ```
+
 
