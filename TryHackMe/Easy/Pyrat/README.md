@@ -1,12 +1,12 @@
 # _**Pyrat CTF**_
-![](pirate.jpg)
+![](pirat.jpg)
 
 ## _**Enumeração**_
 Primeiro, vamos começar com um scan <mark>Nmap</mark>
 > ```bash
 > nmap -p- --open -A [ip_address]
 > ```
-![](scan_nmap.jpg)
+![](scan_nmap.png)
 
 Visitando o site, somos recebidos com a mensagem: _Try a more basic connection!_  
 Pensando, foi testado para ver as requisições e retornos via <mark>Burpsuite</mark>, mas nada  
