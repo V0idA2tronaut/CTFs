@@ -34,7 +34,7 @@ Procurando no <mark>Metasploit</mark> alguma versão de exploit, encontramos e v
 
 Configurando as opções necessárias, obtemos uma sessão meterpreter e vamos digitar ```shell``` para obter uma  
 
-![](shell.jgp)
+![](shell.jpg)
 
 Devido a instabilidade desta shell, vamos ter que contornar  
 Primeiro, vamos criar um _paylaod_ e realizar _upload_ via nossa sessão
