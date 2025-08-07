@@ -24,3 +24,12 @@ Alteramos os seguintes bits
 * 06 para: 01
 * 07 para: 01
 
+Lendo um pouco mais do documento, é preciso abrir o arquivo com um debugger  
+Vamos estar utilizando o <mark>cutter</mark>  
+
+![](cutter.jpg)
+
+Analisando este trecho da função _main_, temos que  
+Essas três instruções armazenam a senha correta, byte a byte, na stack  
+Provavelmente está codificada de forma direta: char senha[] = "2@@25$gfsT&@L"  
+Dando permissões de execução e executando o programa, digitamos a senha com sucesso!  
