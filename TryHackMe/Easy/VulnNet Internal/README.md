@@ -1,5 +1,5 @@
 # _**VulnNet: Internal CTF**_
-![](net.jpg)
+![](internal.jpg)
 
 ## _**Enumeração**_
 Primeiro, vamos começar com um scan <mark>Nmap</mark>
