@@ -4,7 +4,7 @@
 ## _**Enumeração**_
 Primeiro, vamos começar com um scan <mark>Nmap</mark>
 > ```bash
-> nmap -p- --open -A -T5 [ip_address]
+> nmap -p- --open -A [ip_address]
 > ```
 ![](scan_nmap.jpg)
 
@@ -27,5 +27,14 @@ Vamos também buscar por _usernames_ com [lookupsid](https://github.com/fortra/i
 > ```bash
 > lookupsid.py anonymous@[ip_address]
 > ```
+![](lookup.jpg)
+
+Parece que temos alguns usuários  
+Podemos usar GetNPUsers.py do impacket, que pode verificar se há nomes de usuários válidos e se eles não exigem a pré-autenticação Kerberos (PREAUTH) habilitada
+> ```bash
+> GetNPUsers.py vulnnet-rst.local/ -usersfile users.txt -no-pass -dc-ip 10.201.121.138
+> ```
+![](get_np_user.jpg)
+
 
 
