@@ -76,6 +76,4 @@ Vamos utilizar o seguinte comando para realizar login
 > ```bash
 > evil-winrm -i [ip_address] -u Administrator -H [admin_hash]
 > ```
-![](final_login.jgp)
-
 A flag pode ser obtida no _desktop_ do administrador!
