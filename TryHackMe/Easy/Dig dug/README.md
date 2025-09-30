@@ -8,6 +8,6 @@ Vamos executar o comando
 > ```bash
 > nslookup givemetheflag.com [ip_address]
 > ```
-![](scan_lookup)
+![](scan_lookup.jpg)
 
 Assim, conseguimos encontrar a flag!
