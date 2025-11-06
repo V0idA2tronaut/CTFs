@@ -1,5 +1,5 @@
 # _**0x41haz CTF**_
-![](cat.jpg)
+![](0x.jpg)
 
 Primeiro, realizamos o downloa do arquivo  
 Segundo, investigamos ele  
