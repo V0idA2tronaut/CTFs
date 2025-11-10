@@ -50,11 +50,12 @@ E temos sucesso!
 Vamos tentar agora com **fsocity.dic** e ver o que encontramos  
 Temos uma lista do que parece ser senhas  
 Buscando com ```wget [ip_address]/fsocity.dic```  
+
 Na página de login **wordpress**, tentando obter acesso com _admin:admin_, temos acesso negado, mas uma mensagem importante! --> _invalid username_  
 Isso quer dizer que, existe um retorno de **senha incorreta** se **o usuário estiver correto**  
 
-
-Inserindo [] e tentando qualquer tenha, temos: _**The password you entered for the username is incorrect**_  
+Neste momento fiquei perdido e fui atrás de ajuda  
+Inserindo **Elliot** e tentando qualquer tenha, temos: _**The password you entered for the username is incorrect**_  
 Podemos utilizar a ferramenta <mark>Hydra</mark> para um ataque de força bruta, já que temos um dicionário de possíveis senhas
 > ```bash
 > hydra -l Elliot -P fsocity.dic [ip_address] http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:The password you entered for the username" -t 64
@@ -108,3 +109,4 @@ Pesquisando mais sobre no GFTOBins, encontramos que é possível obter uma **she
 ![](root.jpg)
 
 E assim, obtemos a última chave!
+
