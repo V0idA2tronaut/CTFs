@@ -7,7 +7,7 @@ Primeiro, vamos começar com um scan de redes com <mark>Nmap</mark>
 > nmap [ip_address]
 > nmap -p [ports_discovered] -sV -O [ip_address]
 > ```
-![](scan_namp.jpg)
+![](scan_nmap.jpg)
 
 Temos 3 serviços:
 * **FTP**
