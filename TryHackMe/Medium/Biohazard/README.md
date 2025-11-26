@@ -133,5 +133,36 @@ Realizamos login
 ![](ftp_files.jpg)
 
 Vamos realizar _download_ de todos os arquivos e investigar cada um  
+Para a primeira imagem, utilizamos <mark>Steghide</mark> para extrair o seu conteúdo, o que revela uma string  
+Tentando na segunda e na terceira imagem, mas sem sucesso  
+Utilizando <mark>Exiftool</mark> para tentar obter alguma informação na segunda e na terceira imagem, parece que conseguimos outra string na segunda  
+Na terceira imagem, utilizamos <mark>Binwalk</mark> para extrair seu conteúdo secreto, constatado por <mark>Steghide</mark>  
+Agora, temos todas e podemos extrair o conteúdo de helmet_key.txt.gpg  
 
+![](all_images_cracked.jpg)
 
+Obtemos a flag para entrarmos em _/hidden_closet_  
+
+![](closet_room.jpg)
+
+Lendo a narrativa, encontramos dois arquivos  
+O primeiro, novamente uma string que precisamos decifrar  
+O segundo, contém a senha para login via SSH  
+Como não encontramos como decifrar, vamos voltar para as salas  
+Ainda não conseguimos entrar em _studyRoom_, mas agora podemos  
+Conseguimos realizar o _download_ do arquivo _doom.tar.gz_, vamos extrair  
+
+![](ssh_user.jpg)
+
+Extraindo, obtemos o nome de usuário para login via SSH  
+Realizando o login e investigando, encontramos **chris** com uma nota  
+Parece que agora poderemos decodificar a string anteriormente encontrada  
+
+![](chris_note.jpg)
+
+Utilizando essa chave, conseguimos a senha de **wesker** para login SSH  
+Vamos acessar  
+Acessando e investigando, parece que conseguimos executar qualquer tipo de comando neste usuário depois de verificar com ```sudo -l```  
+Obtemos _root_  
+
+![](root.jpg)
