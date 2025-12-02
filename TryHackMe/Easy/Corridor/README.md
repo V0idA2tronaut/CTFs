@@ -1,5 +1,5 @@
 # _**Corridor**_
-![](corrdior.jpg)
+![](corridor.jpg)
 
 ## _**Enumeração**_
 Primeiro, vamos começar com um scan <mark>Nmap</mark>
