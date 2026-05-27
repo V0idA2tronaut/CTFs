@@ -107,6 +107,7 @@ Temos resultado
 ![](user_passwd.jpg)
 
 Encontramos credenciais, vamos tentar realizar login  
+Confirmado a de usuário: **nagiosadmin**  
 Temos login!  
 
 ![](login_success.jpg)
