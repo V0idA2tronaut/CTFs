@@ -42,7 +42,7 @@ Pesquisando sobre, encontramos que, com <mark>smtp-user-enum</mark>, podemos ten
 > ```bash
 > smtp-user-enum -M VRFY -U [userlist_name].txt -t [target_ip_address].com
 > ```
-![](smtp_user_enumm.jpg)
+![](smtp_user_enum.jpg)
 
 Encontramos 2:
 * root
