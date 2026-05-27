@@ -32,6 +32,7 @@ Talves sejam importantes:
 * antimônio | nº atômico = 51
 * polônio | nº atômico = 84
 * paládio | nº atômico = 46
+* mercúrio | nº atômico = 80
 * platina | nº atômico = 78
 * laurêncio | nº atômico = 103  
 
@@ -67,5 +68,55 @@ Acessando **/nagiosxi**, temos uma página de loing
 
 ![](nagios.jpg)
 
+Vamos utilizar novamente a ferramenta <mark>Gobuster</mark> para enumerar diretórios no website  
+> ```bash
+> gobuster dir --url [ip_address]/nagiosxi/ -w ../seclists/../Web-Content/common.txt
+> ```
+![](nagios_gobuster.jpg)
 
+A URL que mais chama atenção: _/login.php?redirect=/nagiosxi/index.php%3f&noauth=1_  
+Pesquisando mais sobre **Nagios XI**, encontramos que, uma das credenciais _default_ é:
+* usuário: nagiosadmin
 
+Vamos tentar um **brute force** com <mark>BurpSuite</mark> com este nome de usuário  
+O sistema deu crash antes mesmo de completar a lista  
+Vamos voltar para o que parece ser a dica inicial, os valores dos elementos  
+Inserindo cada um junto no <mark>CyberChef</mark>, nada  
+Separando um por um temos  
+
+![](cyberchef_result.jpg)
+
+Parece que temos um diretório escondido  
+Vamos realizar o _download_ da imagem e procurar por pistas  
+Com <mark>Strings</mark>, conseguimos encontrar o nome do dono do arquivo  
+Pesquisando o seu nome, encontramos o seguinte:  
+
+![](piet.jpg)
+
+Um pioneiro na arte abstrata  
+Pesquisando mais sobre Piet no contexto de CTFs, temos:
+
+![](piet_ctf.jpg)
+
+Procurando por ferramentas online sobre como escrever na linguagem ou como traduzir para texto legível, encontramos um website específico  
+Realizamos _upload_ para convertemos e temos erro  
+[Outra ferramenta:](https://github.com/PhilippRados/pint), encontrada no GitHub  
+Realizamos o _download_ como instruido, passamos o necessário para PATH e executamos  
+Temos resultado  
+
+![](user_passwd.jpg)
+
+Encontramos credenciais, vamos tentar realizar login  
+Temos login!  
+
+![](login_success.jpg)
+
+Procurando pela versão do Nagios e exploits no google, temos a seguinte CVE  
+
+![](nagios_cve.jpg)
+
+Como o CTF indica para utilizarmos a ferramenta <mark>Metasploit</mark>, procuramos por um _exploit_, selecionamos e alteramos o necessáiro  
+
+![](metasploit_config.jpg)
+
+Basta digitar _shell_ e temos acesso _root_
