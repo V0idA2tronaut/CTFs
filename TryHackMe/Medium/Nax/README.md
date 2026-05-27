@@ -64,7 +64,7 @@ Podemos tentar acessar também
 
 ![](index_php.jpg)
 
-Acessando **/nagiosxi**, temos uma página de loing
+Acessando **/nagiosxi**, temos uma página de login
 
 ![](nagios.jpg)
 
