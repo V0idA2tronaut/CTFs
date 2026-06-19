@@ -1,4 +1,5 @@
 # _**Gatekeeper**_
+![](gatekeeper.jpg)
 
 ## _**Write-up**_
 Vamos começar com um scan da rede para descobrirmos quais portas estão abertas e quais seus respectivos serviços; ferramenta <mark>Nmap</mark>
