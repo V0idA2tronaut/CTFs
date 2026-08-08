@@ -80,7 +80,9 @@ Primeiro, executamos os comandos abaixo para criar um arquivo _.tar.gz_ em nossa
 > sudo ./build-alpine
 > ```
 
+Isso gerará um arquivo **alpine*-.tar.gz**
 Agora, iniciamos nosso servidor ```python``` e transferimos o arquivo  
+Em seguida, importamos a imagem para LXD  
 
 
 
